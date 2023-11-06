@@ -1,0 +1,104 @@
+
+<div class="fullpage">
+    <div class="container">
+        <div class="calculator">
+            <div class="calculating">
+                <h1>CPM Calculation</h1>
+            </div>
+            <div class="calculating-content">
+                <div class="calculator1">
+                    <h2>Select Total Price & Impression</h2>
+                    <div class="totalprice">
+                        <div class="price-container">
+                            <h3>Total Price</h3>
+                            <input type="number" class="pricevalue" placeholder=" Enter value" id="priceInput"
+                                max="1000000">
+                        </div>
+                        <div>
+                            <input type="range" class="pricerange" min="0" max="10000" id="rangeInput">
+                        </div>
+    
+                    </div>
+                    <div class="impression">
+                        <div class="price-container">
+                            <h3>Impression</h3>
+                            <input type="number" class="impressionvalue" id="impressionvalue" placeholder=" Enter value"
+                                max="1000000">
+                        </div>
+                        <div>
+                            <input type="range" class="impressionrange" id="impressionrange" min="0" max="100000000">
+                        </div>
+                    </div>
+                    <div class="intro">
+                        <br>
+                        Since CPM is the cost per thousand impressions,<br>
+                        So the CPM formula is CPM = 1000 × cost / impressions.
+                    </div>
+                </div>
+    
+                <div class="calculator2">
+                    <div class="result-container">
+                        <div class="result">
+                            <h2>CPM Result</h2>
+                            <div class="circular-progress">
+                                <div class="value-container"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <div class="spot">
+            <div class="spotpd">
+                <h1>Spot Per Day Calculation</h1>
+            </div>
+            <div class="spot-contant">
+                <div class="time-selector">
+                    <h2>Select Advertising Display Time</h2>
+                    <div class="input-container">
+                        <label for="start-time">
+                            <h3>Start Time:</h3>
+                        </label>
+                        <input type="time" id="start-time" name="start-time">
+                    </div>
+                    <div class="input-container">
+                        <label for="end-time">
+                            <h3>End Time:</h3>
+                        </label>
+                        <input type="time" id="end-time" name="end-time">
+                    </div>
+                    <div class="input-container">
+                        <label for="video-duration">
+                            <h3>Video Duration (in seconds):</h3>
+                        </label>
+                        <input type="number" id="video-duration" name="video-duration" min="1"
+                            placeholder=" Enter duration (default 15 seconds)">
+                    </div>
+                    <div class="input-container">
+                        <label for="day-duration">
+                            <h3>Day Duration</h3>
+                        </label>
+                        <input type="number" id="day-duration" name="day-duration" min="1"
+                            placeholder=" Enter Total Day(minimun 1 day)">
+                    </div>
+                </div>
+                <div class="spot-result">
+                    <div class="spotcontainer">
+                        <h2>Spot Per Day Result</h2>
+                        <div class="results">
+                            <h2>Results</h2>
+                            <p><strong>Total Time:</strong> <span id="total-time">0 hours</span></p>
+                            <p><strong>Video Duration:</strong> <span id="video-duration-result">0 seconds</span></p>
+                            <p><strong>Spot Per Hour:</strong> <span id="spot-per-hour">0</span></p>
+                            <p><strong>Spot Per Day:</strong> <span id="spot-per-day">0</span></p>
+                            <p><strong>Spot Total with Days :</strong> <span id="spot-total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</div>

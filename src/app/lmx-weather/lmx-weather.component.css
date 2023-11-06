@@ -1,0 +1,407 @@
+  
+  
+  .controller {
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+  
+    min-height:101vh;
+  }
+  
+  .Bigcontainer {
+    height: 900px;
+    width: 90%;
+    background: #f9f9f9;
+    display: flex;
+    /* flex-direction: column; */
+    margin:2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .top-container {
+    height: 100%;
+    width: 100%;
+  
+  }
+  
+  .container {
+    display: flex;
+    /* height: 100%; */
+    width: 100%;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 50%;
+  }
+  
+  .search-container{
+    flex: 50%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+  
+  }
+  
+  .Intro{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    height: 100%;
+  }
+  
+  
+  .weather{
+    /* height: 100%; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .city {
+    margin-top: 0;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+  
+  .search-flex{
+    display: flex;
+  }
+  
+  .search-box{
+    margin-bottom: 10px;
+  }
+  
+  .search button {
+  
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar ,
+  .search button{
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    /* color: white; */
+    font-family: inherit;
+    font-size: 12px;
+  
+    width: calc(100%);
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  
+  .card {
+    background: #000000da;
+    width: 100%;
+    flex:60%;
+    color: white;
+  
+    height: -webkit-fill-available;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0  0 0 12px;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  
+  
+  
+  
+  
+  /*MAPPPPPPPPPPPpp*/
+  .Map {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  #map {
+  
+    width: 100%;
+    height: 100%;
+  
+    border-radius: 0 12px 12px 0;
+  }
+  
+  
+  h1{
+    font-size: 20px;
+    color: #d93d4a;
+  }
+  
+  h2 {
+    font-size: 16px;
+    margin: 2px;
+  }
+  
+  
+  h6 {
+    font-size: 16px;
+    margin: 25px;
+    margin-left: 0;
+    position: relative;
+  }
+  
+  h6::after {
+    content: "";
+    display: block;
+    width: 80%; /* Adjust the width to control the underline length */
+    height: 1px; /* Set the thickness of the underline */
+    background-color: #f0321dd2; /* Change the color of the underline */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  
+  
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+  }
+  
+  .footer-container>* {
+    flex: 1;
+  
+  
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer li{
+    margin: 10px;
+    margin-left: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: red;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  }
+  
+  
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+  }
+  
+  .footer-social ul li {
+    display: inline-block;
+    margin-right: 15px;
+  
+  }
+  
+  .footer-social ul li a img {
+    width: 37px;
+    height: 37px;
+  }
+  
+  
+  
+  .footer-bottom p {
+    text-align: center;
+    font-size: 8px;
+  }
+  
+  
+  .fa-regular, .far {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 400;
+  }
+  .fa-solid, .fas {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1200px) {
+  
+  
+  
+    header {
+      font-size: 4vw;
+      /* padding: 0px; */
+      /* right:10px; */
+    }
+  
+    header img {
+      max-width: 20vw;
+    }
+  
+    .Header-title {
+      font-size: 4.2vw;
+    }
+  
+    .btn {
+      padding: 0.75rem;
+      width: 100%;
+    }
+  
+    .Logout button {
+      font-size: 4vw;
+      padding: 0%;
+      margin-left: 10px;
+    }
+  
+    .Logout ul {
+      padding: 0px;
+      font-size: 0.8vw;
+      margin: 0;
+    }
+  
+    .Logout li {
+  
+      margin: 1vw;
+    }
+  
+  
+    .Header-title button {
+      font-size: 4vw;
+    }
+  
+  
+  
+    
+  
+  }
+  
+  
+  @media screen and (max-width: 750px) {
+  
+    .Logout a {
+      font-size: 10px;
+      padding: 0;
+    }
+  
+    .search{
+      margin: 1px;
+    }
+    .search-flex{
+      flex-direction: column;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    h6{
+      margin: 15px;
+      font-size: 12px;
+    }
+    .footer-social ul{
+      margin: 0;
+    }
+    footer li {
+      margin: 5px;
+      font-size: 12px;
+  }
+  
+  footer li a {
+      font-size: 12px;
+  }
+  h6::after {
+      left: 50%; /* Move the line to the middle of the h6 element */
+      transform: translateX(-50%); /* Center the line horizontally */
+      bottom: 0;
+      width: 40%;
+  }
+  
+  }
+  
+  @media screen and (max-width: 550px) {
+    .Bigcontainer{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .container{
+      flex: 45% ;
+      flex-direction: row;
+    }
+  
+    .card{
+      border-radius: 0 12px 0 0;
+    }
+  
+    #map{
+      border-radius:  0 0 12px 12px;
+    }
+    .Intro{
+      flex: 20%;
+    }
+  
+  
+  
+  }

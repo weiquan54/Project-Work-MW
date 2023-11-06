@@ -1,0 +1,678 @@
+header {
+    padding: 20px;
+    background-color: #fff!important;
+    box-shadow: 0 4px 15px #eceef5, 0 0 25px rgba(0,0,0,.1);
+    z-index: 1000;
+    /* width: 100%; */
+}
+
+.headercontainer {
+    /* background-color: transparent; */
+    font-size: 2.5vh;
+    width: 100%;
+    max-height: 500px;
+    height: 3.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+
+    top: 0;
+
+    font-family: Poppins, sans-serif;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+
+}
+
+header img {
+    max-width: 8vw;
+    height: 4.5vh;
+
+}
+
+
+
+#header-title.image-button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.Logout a {
+    text-decoration: none;
+    color: rgba(40, 6, 6, 0.782);
+    font-size: 16px;
+}
+
+.Logout ul {
+    list-style: none;
+    padding: 10px;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: baseline;
+    font-weight: 400;
+
+}
+
+.Logout li {
+    margin-right: 20px;
+}
+
+.Logout li a {
+    display: inline-block;
+    cursor: pointer;
+    color: rgba(40, 6, 6, 0.46);
+    padding: 2px;
+    font-family: segoe UI !important;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+ul li.currentpage a {
+    color: rgba(40, 6, 6, 0.922);
+    /* Green color */
+    border-bottom: 2px solid #f0321dd2;
+    /* Green underline */
+    border-radius: 0;
+    /* Remove border-radius for current page */
+    align-items: baseline;
+}
+
+/* Hover styles for links */
+.Logout ul li a:hover {
+  color: black;
+  background-color: #81818121;
+  transform: scale(1.1);
+  border-radius: 8px;
+  transition: background-color 0.1s ease, color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  /* Remove default underline on hover */
+}
+
+.fullpage{
+    background-color: #f8f9fe;
+    height: 101vh;
+}
+
+.container {
+    min-height: 90%;
+    /* width: 100%; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px */
+}
+
+.calculator,
+.spot {
+    /* max-width: 760px; */
+    width: 40%;
+    /* min-height: 80%; */
+    height: 600px;
+    /* background: #000000da; */
+    /* background: #d93d4a; */
+    background-color: #ffffff;
+    color: #d93d4a;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: Poppins, sans-serif;
+    margin: 20px;
+    border: 2px solid #ccc;
+    border-radius: 0.35rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calculating,
+.spotpd {
+    width: 100%;
+    text-align: center;
+    height: 10%;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.calculating-content,
+.spot-contant {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.calculator1 input {
+    width: 100%;
+}
+
+.intro {
+    /* font-size: small; */
+    font-family: poppins;
+}
+
+.price-container .pricevalue,
+.price-container .impressionvalue {
+    width: 50%;
+    align-items: flex-end;
+    position: relative;
+    justify-content: end;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+    padding: 5px;
+    background-color: transparent;
+    font-family: poppins;
+    border: 2px solid #f0f0f0;
+    display: block;
+}
+
+
+.price-container .pricevalue:focus,
+.price-container .impressionvalue:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.calculator2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress {
+    position: relative;
+    height: 50%;
+    width: 80%;
+    border-radius: 50%;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result{
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.value-container {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1F5AA6;
+    background-color: rgba(0, 0, 0, 0.046);
+    border-radius: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 150px;
+    height: 150px;
+
+}
+
+
+.result-container{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*SPOTperday */
+
+
+.time-selector,
+.spot-result,
+.calculator1,
+.calculator2 {
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.05);
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* height: 100%; */
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="time"] {
+    padding: 5px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+}
+
+input[type="time"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input[type="range"] {
+    height: 50px;
+
+    accent-color: rgba(108, 104, 104, 0.088);
+}
+
+.time-selector #video-duration,
+.time-selector #day-duration {
+    padding: 5px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+
+}
+
+
+
+
+
+.results {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
+
+}
+
+
+
+.results p {
+    margin: 10px 0;
+}
+
+/* Style the results values */
+#total-time,
+#video-duration-result,
+#spot-per-hour,
+#spot-per-day,
+#spot-total {
+    font-weight: bold;
+}
+
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #d93d4a;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 16px;
+    margin: 25px;
+    margin-left: 0;
+    position: relative;
+  }
+  
+  h6::after {
+    content: "";
+    display: block;
+    width: 80%; /* Adjust the width to control the underline length */
+    height: 1px; /* Set the thickness of the underline */
+    background-color: #f0321dd2; /* Change the color of the underline */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+.footer {
+    background-color: #333;
+    color: #fff;
+   
+    width: 100%;
+    position: static;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+.footer-container>* {
+    flex: 1;
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin: 10px;
+    margin-left: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+.footer-social ul li a img {
+    width: 37px;
+    height: 37px;
+}
+
+
+
+.footer-bottom p {
+    text-align: center;
+    font-size: 8px;
+}
+
+
+.fa-regular, .far {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 400;
+  }
+  .fa-solid, .fas {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+  }
+
+
+
+@media screen and (max-width: 1450px) {
+
+x   xxxxxxx    .value-container{
+        width: 100px;
+        height: 100px;
+    }
+    .results{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+
+@media screen and (max-width:1300px){
+w
+    .price-container .pricevalue, .price-container .impressionvalue{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+    header {
+        font-size: 4vw;
+        /* padding: 0px; */
+        /* right:10px; */
+    }
+
+    header img {
+        max-width: 20vw;
+    }
+
+    .Header-title {
+        font-size: 4.2vw;
+    }
+
+    .btn {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .Logout button {
+        font-size: 4vw;
+        padding: 0%;
+        margin-left: 10px;
+    }
+
+    .Logout ul {
+        padding: 0px;
+        font-size: 0.8vw;
+        margin: 0;
+    }
+
+    .Logout li {
+
+        margin: 1vw;
+    }
+
+
+
+    .Header-title button {
+        font-size: 4vw;
+    }
+
+    .fullpage{
+        height: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .calculator, .spot {
+        width: 80%;
+        /* height: 400px; */
+    }
+    body{
+        height: auto;
+    }
+    .price-container {
+        flex-direction: row;    
+    }
+    .price-container .pricevalue, .price-container .impressionvalue{
+        width: 50%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+
+    header {
+        font-size: 4vw;
+        /* padding: 0px; */
+        /* right:10px; */
+    }
+
+    header img {
+        max-width: 20vw;
+    }
+
+    .Header-title {
+        font-size: 4.2vw;
+    }
+
+    .btn {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .Logout button {
+        font-size: 4vw;
+        padding: 0%;
+        margin-left: 10px;
+    }
+
+    .Logout ul {
+        padding: 0px;
+        font-size: 0.8vw;
+        margin: 0;
+    }
+
+    .Logout li {
+
+        margin: 1vw;
+    }
+
+    .Logout a {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .Header-title button {
+        font-size: 4vw;
+    }
+
+
+
+    * {
+       
+        margin: 0;
+        padding: 0%;
+    }
+
+    .calculator,.spot{
+        height: 50%;
+    }
+
+    .calculating-content, .spot-contant {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center
+
+    }
+
+    .time-selector, .spot-result, .calculator1, .calculator2{
+        width: 80%;
+    }
+
+    body{
+        height: auto;
+    }
+    .value-container{
+        width: 0px;
+        height: 0px;
+        /* display: none; */
+    }
+    h2{
+        margin:0 0 10px 0 ;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h6 {
+        margin: 15px;
+        font-size: 12px;
+    }
+
+    .footer-social ul {
+        margin: 0;
+    }
+
+    footer li {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    footer li a {
+        font-size: 12px;
+    }
+    h6::after {
+        left: 50%; /* Move the line to the middle of the h6 element */
+        transform: translateX(-50%); /* Center the line horizontally */
+        bottom: 0;
+        width: 40%;
+    }
+  
+    
+    
+    
+}

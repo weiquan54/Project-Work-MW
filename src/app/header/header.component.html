@@ -1,0 +1,18 @@
+<header>
+    <div class="headercontainer">
+        <div class="Header">
+            <button id="header-title" class="image-button">
+                <img src="assets/picture/lmx.png" alt="Error Display" id="logo">
+            </button>
+        </div>
+
+        <div class="Logout">
+            <ul>
+                <li><a routerLink="/calculator" [class.currentpage]="isCurrentPage('/calculator')">Calculation</a></li>
+                <li><a routerLink="/weather" [class.currentpage]="isCurrentPage('/weather')">Weather</a></li>
+                <li><a routerLink="/registration" [class.currentpage]="isCurrentPage('/registration')">Registration</a></li>
+                <li><a id="logoutbutton" routerLink="/login" [class.currentpage]="isCurrentPage('/login')">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

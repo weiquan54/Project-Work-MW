@@ -1,0 +1,11 @@
+
+
+
+.controller {
+    justify-content: center;
+    /* display: flex; */
+    box-sizing: border-box;
+    height: 101vh;
+}
+
+

@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="left-section">
+    <div class="Leftpart">
+      <div class="Intro">
+        <h1>OOH Technology that<br class="lhiden">
+          Empowers All Media Owners<br class="lhiden"> </h1>
+      </div>
+      <div class="Intro2">
+        <h2>Streamline Your Inventory Management <br class="lhiden">
+          and Automate Your Campaign Bookings,<br class="lhiden">
+          Measurement, and Delivery Today</h2>
+      </div>
+    </div>
+  </div>
+  <div class="right-section">
+    <div class="Rightcard">
+      <div class="Login" id="loginform">
+        <img src="assets/picture/lmx.png" alt="Error Display" id="logo">
+        <h1>Log in to your account</h1><br>
+
+        <label for="username" class="input-label">Username</label><br>
+        <div class="input-wrapper">
+          <img src="assets/picture/username-1.0.png" class="input-icon">
+          <input type="text" id="username" class="underlined-input" placeholder="username" (keyup.enter)="onSubmit()">
+        </div>
+        <div id="usernameerror" class="required">Username is required</div>
+        <!-- <div id="usernameerror" class="required" *ngIf="usernameError">Username is required</div> -->
+        <br>
+
+        <label for="password" class="input-label">Password</label><br>
+        <div class="input-wrapper">
+          <img src="assets/picture/password-1.0.png" class="input-icon">
+          <input type="password" id="password" class="underlined-input" placeholder="password" (keyup.enter)="onSubmit()"   >
+        </div>
+        <div id="passworderror"class="required">Password is required</div>
+
+        <br>
+
+        <div class="remember">
+          <input type="checkbox">
+          <label for="Remember" name="Remember" id="Remember">Remember Me</label><br><br>
+        </div>
+
+        <div>
+          <button (click)="onSubmit()" id="Loo">Login</button><br><br>
+        </div>
+
+        <div class="forget">
+          <a href="https://ssp.lmx.ai/forgotpassword">Forgot username or password?</a><br><br>
+        </div>
+
+        <div>
+          <button id="Explore" (click)="explore()">Explore</button>
+          <br>
+          <br>
+        </div>
+      </div>
+
+
+
+      <div class="Social">
+        <div class="Follow">
+          <!-- <div class="line1"></div> -->
+          <h5>Follow us</h5>
+          <!-- <div class="line2"></div>   -->
+        </div>
+        <div class="Media">
+          <a href="https://www.facebook.com/movingwalls/" class="media" id="facebook-icon" target="_blank">
+            <img src="assets/picture/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com/movingwalls" class="media" id="twitter">
+            <img src="assets/picture/twitter.png" alt="Twitter">
+          </a>
+          <a href="https://www.instagram.com/mymovingwalls/" class="media" id="instagram">
+            <img src="assets/picture/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/company/moving-walls" class="media" id="linkedin">
+            <img src="assets/picture/linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

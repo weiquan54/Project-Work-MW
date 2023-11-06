@@ -1,0 +1,159 @@
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+.footer-container>* {
+    flex: 1;
+
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin: 10px;
+    margin-left: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+.footer-social ul li a img {
+    width: 37px;
+    height: 37px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #d93d4a;
+}
+
+h6 {
+    font-size: 16px;
+    margin: 25px;
+    margin-left: 0;
+    position: relative;
+}
+
+h6::after {
+    content: "";
+    display: block;
+    width: 80%;
+    /* Adjust the width to control the underline length */
+    height: 1px;
+    /* Set the thickness of the underline */
+    background-color: #f0321dd2;
+    /* Change the color of the underline */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+.footer-bottom p {
+    text-align: center;
+    font-size: 8px;
+}
+
+
+
+.fa-regular,
+.far {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 400;
+}
+
+.fa-solid,
+.fas {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+}
+
+.fa-phone:before {
+    content: "\f095";
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+.fa-phone:before {
+    content: "\f095";
+    font-family: "Font Awesome 6 Free" !important;
+}
+.fa-envelope:before {
+    content: "\f0e0";
+    font-family: "Font Awesome 6 Free" !important;
+}
+.fa-location-dot:before, .fa-map-marker-alt:before {
+    content: "\f3c5";
+    font-family: "Font Awesome 6 Free" !important;
+}
+@media screen and (max-width: 768px) {
+
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h6 {
+        margin: 15px;
+        font-size: 12px;
+    }
+
+    .footer-social ul {
+        margin: 0;
+    }
+    footer li {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    footer li a {
+        font-size: 12px;
+    }
+    h6::after {
+        left: 50%; /* Move the line to the middle of the h6 element */
+        transform: translateX(-50%); /* Center the line horizontally */
+        bottom: 0;
+        width: 40%;
+    }
+
+
+}
