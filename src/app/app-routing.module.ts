@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: 'registration', component: LMXRegistryComponent },
   { path: 'calculator', component: LMXCalculatorComponent },
   { path: 'weather', component: LMXWeatherComponent },
-  { path: 'error', component: ErrorPageComponent },
+  // { path: 'error', component: ErrorPageComponent },
+  { path: 'ERROR Page/Error', component: ErrorPageComponent },
   { path: 'login', component: LoginComponent },
   // Add more routes as needed
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // Default route
