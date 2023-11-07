@@ -5,6 +5,8 @@ import { LMXRegistryComponent } from './lmx-registry/lmx-registry.component';
 import { LMXCalculatorComponent } from './lmx-calculator/lmx-calculator.component';
 import { LMXWeatherComponent } from './lmx-weather/lmx-weather.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 const routes: Routes = [
   { path: 'registration', component: LMXRegistryComponent },
@@ -20,6 +22,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true })],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
 })
 export class AppRoutingModule { }
