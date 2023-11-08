@@ -16,8 +16,8 @@ const routes: Routes = [
   // { path: 'ERROR Page/Error', component: ErrorPageComponent },
   { path: '/Project-Work-MW/login', component: LoginComponent },
   // Add more routes as needed
-  { path: '', redirectTo: '/Project-Work-MW//login', pathMatch: 'full' }, // Default route
-  { path: '**', redirectTo: '/Project-Work-MW//error', pathMatch: 'full' }, // Redirect for unknown paths
+  { path: '', redirectTo: '/Project-Work-MW/login', pathMatch: 'full' }, // Default route
+  { path: '**', redirectTo: '/Project-Work-MW/error', pathMatch: 'full' }, // Redirect for unknown paths
 ];
 
 @NgModule({
