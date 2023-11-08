@@ -44,7 +44,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes, { useHash: true}),
+    RouterModule.forRoot(routes, { useHash: true, anchorScrolling: 'enabled'}),
     AppRoutingModule,
   ],
   providers: [
