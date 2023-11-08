@@ -15,8 +15,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   // Add more routes as needed
   // { path: '', redirectTo: 'login', pathMatch: 'full' }, // Default route
-  { path: '', redirectTo: 'calculator', pathMatch: 'full' }, // Default route
-  { path: '**', redirectTo: 'error', pathMatch: 'full' }, // Redirect for unknown paths
+  { path: '', redirectTo: '/calculator', pathMatch: 'full' }, // Default route
+  { path: '**', redirectTo: '/error', pathMatch: 'full' }, // Redirect for unknown paths
 ];
 
 @NgModule({
