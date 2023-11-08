@@ -9,15 +9,15 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 const routes: Routes = [
-  { path: 'Project-Work-MW/registration', component: LMXRegistryComponent },
-  { path: 'Project-Work-MW/calculator', component: LMXCalculatorComponent },
-  { path: 'Project-Work-MW/weather', component: LMXWeatherComponent },
-  { path: 'Project-Work-MW/error', component: ErrorPageComponent },
+  { path: '/Project-Work-MW/registration', component: LMXRegistryComponent },
+  { path: '/Project-Work-MW/calculator', component: LMXCalculatorComponent },
+  { path: '/Project-Work-MW/weather', component: LMXWeatherComponent },
+  { path: '/Project-Work-MW/error', component: ErrorPageComponent },
   // { path: 'ERROR Page/Error', component: ErrorPageComponent },
-  { path: 'Project-Work-MW/login', component: LoginComponent },
+  { path: '/Project-Work-MW/login', component: LoginComponent },
   // Add more routes as needed
-  { path: '', redirectTo: 'Project-Work-MW//login', pathMatch: 'full' }, // Default route
-  { path: '**', redirectTo: 'Project-Work-MW//error', pathMatch: 'full' }, // Redirect for unknown paths
+  { path: '', redirectTo: '/Project-Work-MW//login', pathMatch: 'full' }, // Default route
+  { path: '**', redirectTo: '/Project-Work-MW//error', pathMatch: 'full' }, // Redirect for unknown paths
 ];
 
 @NgModule({
